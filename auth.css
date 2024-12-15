@@ -1,0 +1,241 @@
+*{
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    margin:0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    
+}
+
+:root{
+    --realColor: rgb(7, 60, 135);
+    --bgColor:  rgb(4, 11, 48);
+    --footerColor: rgb(24, 36, 69);
+    
+}
+body{
+background: linear-gradient(to right, var(--bgColor), rgb(6, 29, 83));
+ 
+}
+.navTop{
+    position: sticky;
+    transition: 0.2s ease-in-out;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      background-color: rgb(255, 255, 255);
+        width: 100%;
+        box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.048);
+    }
+    
+    .sticky{
+        transition: 0.2s ease-in-out;
+        position: fixed;
+        top:0;
+        width: 100%;
+        background-color: black;
+        color: white;
+    }
+    .sticky a{
+        color: white;
+    }
+    .navTop ul li{
+        padding: 5px;
+        margin: 10px;
+        display: inline-block;
+    }
+    .navTop ul li a{
+        font-weight:600;
+        color: rgb(56, 56, 56);
+    }
+    .navTop ul li i{
+        color: var(--realColor);
+    }
+    
+    .navTop h1{
+        margin: 15px;
+        color: rgb(60, 70, 176);
+        box-shadow: 0px 5px 0px rgba(0, 0, 0, 0.631);
+    }
+    .sticky  h1{
+        box-shadow: 0px 5px 0px rgba(255, 255, 255, 0.729);
+    }
+    .navTop ul li a{
+        padding: 10px;
+        cursor: pointer;
+    }
+
+    .navTop ul li a button{
+        border: none;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 1rem;
+        background-color: var(--realColor);
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+    }
+    .navTop ul li button i{
+        color: white;
+    }
+
+
+
+    .regParent{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 100px;
+
+    }
+    .regParent .regSectionBlock{
+        width: 800px;
+  
+
+        background-color: rgba(242, 242, 242, 0.535);
+  
+  
+        margin: 15px;
+        border-radius: 15px;
+    }
+    .regSectionBlock .regForm{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.189);
+        background-color: white;
+       
+    }
+    .regForm ul li{
+        list-style: none;
+        width: 100%;
+        padding: 10px;
+  
+      
+    }
+    .regForm ul{
+        width: 100%;
+        border-left: 1px solid rgba(0, 0, 0, 0.226);
+    }
+    .regForm ul li input{
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+border: 1px solid rgba(0, 0, 0, 0.226);
+        outline: none;
+    }
+    .regForm ul li input::placeholder{
+        color: rgb(186, 186, 186);
+    }
+    .regForm ul li h2{
+        color: rgb(60, 60, 60);
+        font-weight: 100;
+        font-size: 1.2rem;
+        font-family: sans-serif;
+    }
+    .regForm ul li #signup{
+        width: 100%;
+        padding: 15px;
+        cursor: pointer;
+        border-radius: 5px;
+        border: none;
+        font-weight: 900;
+        font-size: 1.2rem;
+        color: white;
+        background-color:var(--realColor);
+    }
+    .regForm ul li h1{
+        color: var(--realColor);
+        font-weight: 900;
+       
+    }
+    .regForm ul li #male, #female{
+       border: 1px solid rgba(0, 0, 0, 0.448);
+        cursor: pointer;
+        border-radius: 5px;
+        background-color: white;
+        
+    }
+    .regForm ul li #male i {
+        color: rgb(36, 117, 246);
+    }
+    .regForm ul li #female i{
+        color: rgb(241, 50, 82);
+    }
+    
+    .regForm ul img{
+        height: 50px;
+    }
+
+    #line{
+        text-decoration: underline;
+        width: 100%;
+        color: rgb(0, 0, 0);
+    }
+    .mfb{
+        border-top:1px solid rgba(0, 0, 0, 0.27);
+    }
+
+    .title{
+        border:1px solid rgba(0, 0, 0, 0.135);
+    }
+
+    footer{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        align-items: self-start;
+        background-color:var(--footerColor);
+       position: fixed;
+       bottom: 0;
+       height: 70px;
+    }
+    footer ul li{
+        list-style: none;
+        display: inline-flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    footer ul li a{
+        color: white;
+    }
+footer ul li h1{
+    margin: 15px;
+    color: rgb(103, 113, 223);
+    box-shadow: 0px 5px 0px rgba(255, 255, 255, 0.887);
+}
+footer ul li h5{
+    color: rgb(193, 193, 193);
+}
+
+
+    .imgbox{
+        background-color: var(--realColor);
+        height: 645px;
+        
+    }
+
+    .imgbox ul li{
+        list-style: none;
+        margin:5px;
+    
+
+    }
+    .imgbox ul li h1{
+        color: white;
+  
+        border-bottom: 5px solid rgb(228, 225, 25);
+    }
+    .imgbox ul li h2{
+        
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .tb{
+        margin: 10px;
+    }

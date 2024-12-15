@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+    <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+<!--top navigation-->
+    <div class="navTop">
+        <h1>C.A.S<i class='bx bx-anchor' style="color: red;" ></i></h1>
+        <ul>
+        
+            <li><a href="#">Home<i class='bx bxs-home' ></i></a></li>
+            <li><a href="#">About us<i class='bx bx-question-mark'></i></a></li>
+            <li><a href="login.html"><button>Login<i class='bx bxs-door-open' ></i></button></a></li>
+        </ul>
+    </div>
+    
+<!--end of top navigation -->
+
+    <!--registration form part-->
+    
+    <div class="regParent">
+       
+<div class="regSectionBlock">
+    
+    <div class="regForm">
+     
+           <div class="imgbox">
+            <img src="images/295099346_517743656818583_8296593718447410973_n-removebg-preview.png">
+            <ul>
+                <li><h1>CHILDREN OF FATIMA SCHOOL INC.</h1></li>
+                <li><h2>Education that works.</h2></li>
+            </ul>
+           </div>
+
+      
+        <ul>
+            <div class="title">
+            <li><h1>Registration<i class='bx bx-anchor' style="color: red;" ></i></h1></li>
+        </div>
+        <div class="tb">
+           
+          Teacher   <input type="checkbox" style="  border: 1px solid rgba(0, 0, 0, 0.226);"> </input> Student  <input type="checkbox" style="  border: 1px solid rgba(0, 0, 0, 0.226);">
+            </div>
+            <li><h2>Full Name<i class='bx bxs-user' ></i></h1><Input type="text" placeholder="Michael Oliver M. Leaño Jr."></li>
+                <li><h2>Email Address<i class='bx bxs-envelope' ></i></h1><input type="email" placeholder="Example18@gmail.com"></li>
+                <li><h2>Contact Number<i class='bx bxs-phone' ></i></h1><input type="tel" placeholder="+63"></li>
+                <li><h2>Birthday<i class='bx bxs-calendar' ></i></h1><input type="date" placeholder="Birthdate"></li>
+                <li><h2>Password<i class='bx bx-key' ></i></h1><input type="password" placeholder="****"></li>
+                  
+                    <div class="mfb">
+                    <li><button id="male"><h1><i class='bx bx-male' ></i></h1></button> <button id="female"><h1><i class='bx bx-female' ></h1></i></button></li>
+                </div>
+
+        Agree to our <a href="#">terms of service.</a>     <input type="checkbox">
+               <li> <button id="signup" onclick="signUp()">Sign up</button></li>
+               
+        </ul>
+    </div>
+</div>
+</div>
+   
+
+<footer>
+    <ul>
+        <li><a href="#"><h1>C.A.S<i class='bx bx-anchor' style="color: red;"></i></h1></a></li>
+        <li><a href="#"><h5><i class='bx bx-copyright' ></i>2024 Council Administration System Ownership</h2></a></li>
+          
+    </ul>
+</footer>
+<script src="auth.js"></script>
+<script src="firebase.js" type="module"></script>
+</body>
+</html>
